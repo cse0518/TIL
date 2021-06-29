@@ -2,7 +2,7 @@ ___
 # 자바스크립트의 시작
 - [x] 오리엔테이션 (21.06.27)
 <br><br>
-- [ ] 웹과 Javascript (30%)
+- [ ] 웹과 Javascript (45%)
 - [ ] 퀴즈
 <br><br>
 - [ ] Javascript 제어문
