@@ -37,7 +37,9 @@ ___
   - class는 같은 스타일이 지정될 그룹 (포괄적)
   - id는 특정한 태그만 스타일 지정
   - 우선순위는 태그 < class < id
-  - 사진
+  
+<img width="250px" src="https://user-images.githubusercontent.com/60170616/124061592-1b0a9900-da6a-11eb-81ce-62933e1c485e.png"/>
+
 - 해당 페이지 전체에 해당하는 css 수정
   - < input type="button" value="night" onclick="documnet.querySelector('body').style.backgroundColor = 'black';">
   - 버튼을 누르면 배경색이 검정으로 바뀐다.
