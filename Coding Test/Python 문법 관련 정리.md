@@ -1,5 +1,6 @@
 ___
 # Python 문법 관련 정리
+<br>
 
 ## 목차
   - [List 관련 메소드](#list-관련-메소드)
@@ -121,6 +122,7 @@ print(a - b)
 {3, 4, 5}
 {1, 2}
 ```
+<br>
 
 - 원소 삽입, 삭제
 ```python
@@ -155,6 +157,7 @@ ___
   - list( map( int, input().split() ))
 - ex) 공백을 기준으로 구분된 데이터의 개수가 많지 않다면, 단순히 다음과 같이 사용합니다.
   - a, b, c = map( int, input().split() )
+<br>
 
 - 데이터를 입력 받아 int 형으로 형변환 후 list로 저장
 ```python
@@ -172,6 +175,7 @@ print(data)
 65 90 75 34 99
 [99, 90, 75, 65, 34]
 ```
+<br>
 
 - 빠르게 입력 받기
 ```python
@@ -181,6 +185,7 @@ import sys
 data = sys.stdin.readline().rstrip()
 print(data)
 ```
+<br>
 
 - f-string
 ```python
@@ -207,6 +212,7 @@ for x in array:
 5
 3
 ```
+<br>
 
 - 연속적인 값을 차례대로 순회하는 range(시작 값, 끝 값 + 1)
 ```python
@@ -221,6 +227,7 @@ print(result)
 ```python
 45
 ```
+<br>
 
 - 반복문에서 코드 실행을 건너뛰는 continue
 ```python
@@ -257,6 +264,7 @@ print(a)
 ```python
 10
 ```
+<br>
 
 - 여러개의 return 값
 ```python
@@ -273,6 +281,7 @@ print(a, b, c, d)
 ```python
 10 4 21 2.333333335
 ```
+<br>
 
 - 람다 표현식
   - 함수가 매우 간단하거나, 한번 사용하고 말 경우에 이용
@@ -282,6 +291,7 @@ print((lambda a, b: a + b)(3, 7))
 ```python
 10
 ```
+<br>
 
 - 람다 함수를 이용한 정렬
 ```python
@@ -297,6 +307,7 @@ print(sorted(array, key = lambda x: x[1]))
 [('이순신', 32), ('홍길동', 50), ('아무개', 74)]
 [('이순신', 32), ('홍길동', 50), ('아무개', 74)]
 ```
+<br>
 
 - 여러 개의 리스트에 적용되는 람다 표현식
 ```python
@@ -361,9 +372,11 @@ print(result)
 [9, 8, 5, 4, 1]
 [('이순신', 75), ('아무개', 50), ('홍길동', 35)]
 ```
+<br>
 
 - 순열과 조합
-![순열과 조합](https://user-images.githubusercontent.com/60170616/126166426-46a855f5-b8b8-449f-8c2a-430aa13e6743.JPG)
+<img width="700px" src="https://user-images.githubusercontent.com/60170616/126166426-46a855f5-b8b8-449f-8c2a-430aa13e6743.JPG">
+<br>
 
 - 순열
 ```python
@@ -391,6 +404,7 @@ print(result)
 [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'B'), ('B', 'C'),
 ('C', 'A'), ('C', 'B'), ('C', 'C')]
 ```
+<br>
 
 - 조합
 ```python
@@ -417,6 +431,7 @@ print(result)
 ```python
 [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
 ```
+<br>
 
 - Counter
 ```python
@@ -433,6 +448,7 @@ print(dict(counter))
 1
 {'red': 2, 'blue': 3, 'green': 1}
 ```
+<br>
 
 - 최대 공약수( gcd() 함수 )와 최소 공배수
 ```python
