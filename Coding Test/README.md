@@ -1,9 +1,7 @@
 ___
 # 코딩테스트 준비
-- 코딩테스트 준비를 위한 repository
 - [참고영상](https://www.youtube.com/playlist?list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC) ( 나동빈_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
 - [Python 문법 관련 정리](Python%20문법%20관련%20정리.md)
-
   - List 관련 메소드
   - 튜플을 사용하면 좋은 경우
   - 사전 자료형(Dictionary)
@@ -12,10 +10,19 @@ ___
   - 반복문
   - 함수와 람다 표현식
   - 실전에서 유용한 표준 라이브러리
+    - 내장함수(sum, min, max, eval, sorted)
+    - 순열과 조합
+    - Counter
+    - 최대공약수 & 최소공배수
 
 - [코딩테스트 관련 정리](코딩테스트%20관련%20정리.md)
   - 그리디 알고리즘
   - 구현 문제
+  - 스택 구현(Python & Java)
+  - 큐 구현(Python & Java)
+  - 재귀 함수
+    - 팩토리얼
+    - 최대공약수
 ___
 <br>
 
