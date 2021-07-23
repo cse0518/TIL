@@ -31,7 +31,10 @@ ___
 | remove() | 변수명.remove(특정 값) | 특정 값을 갖는 **원소**를 **하나 제거** | O(N) |
 <br>
 
-- 원소 모두 제거하기
+<details>
+<summary>원소 모두 제거하기 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 a = [1, 2, 3, 4, 5, 5, 5]
 remove_set = {3, 5} # 집합 자료형
@@ -43,6 +46,11 @@ print(result)
 ```python
 [1, 2, 4]
 ```
+
+</div>
+</details>
+<br>
+
 ___
 <br>
 
@@ -56,6 +64,10 @@ ___
 <br>
 
 ## 사전 자료형(Dictionary)
+<details>
+<summary>사전 자료형 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 a = dict()
 a['홍길동'] = 97
@@ -87,11 +99,19 @@ dict_keys(['홍길동', '이순신'])
 ['홍길동', '이순신']
 [97, 99]
 ```
+
+</div>
+</details>
+<br>
+
 ___
 <br>
 
 ## 집합 자료형
-- 집합 자료형 초기화
+<details>
+<summary>집합 자료형 초기화 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 # 집합 자료형 초기화 방법 1
 data = set([1, 1, 2, 3, 4, 4, 5])
@@ -105,9 +125,15 @@ print(data)
 {1, 2, 3, 4, 5}
 {1, 2, 3, 4, 5}
 ```
+
+</div>
+</details>
 <br>
 
-- 합집합, 교집합, 차집합
+<details>
+<summary>합집합, 교집합, 차집합 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 a = set([1, 2, 3, 4, 5])
 b = set([3, 4, 5, 6, 7])
@@ -126,9 +152,15 @@ print(a - b)
 {3, 4, 5}
 {1, 2}
 ```
+
+</div>
+</details>
 <br>
 
-- 원소 삽입, 삭제
+<details>
+<summary>원소 삽입, 삭제 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 data = set([1, 2, 3])
 print(data)
@@ -151,6 +183,11 @@ print(data)
 {1, 2, 3, 4, 5, 6}
 {1, 2, 4, 5, 6}
 ```
+
+</div>
+</details>
+<br>
+
 ___
 <br>
 
@@ -163,7 +200,10 @@ ___
   - a, b, c = map( int, input().split() )
 <br>
 
-- 데이터를 입력 받아 int 형으로 형변환 후 list로 저장
+<details>
+<summary>데이터를 입력 받아 int 형으로 형변환 후 list로 저장 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 # 데이터의 개수 입력
 n = int(input())
@@ -179,6 +219,9 @@ print(data)
 65 90 75 34 99
 [99, 90, 75, 65, 34]
 ```
+
+</div>
+</details>
 <br>
 
 - 빠르게 입력 받기
@@ -218,7 +261,10 @@ for x in array:
 ```
 <br>
 
-- 연속적인 값을 차례대로 순회하는 range(시작 값, 끝 값 + 1)
+<details>
+<summary>연속적인 값을 차례대로 순회하는 range(시작 값, 끝 값 + 1) (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 result = 0
 
@@ -231,9 +277,15 @@ print(result)
 ```python
 45
 ```
+
+</div>
+</details>
 <br>
 
-- 반복문에서 코드 실행을 건너뛰는 continue
+<details>
+<summary>반복문에서 코드 실행을 건너뛰는 continue (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 scores = [90, 85, 77, 65, 97]
 cheating_student_list = {2, 4}
@@ -248,11 +300,19 @@ for i in range(5):
 1 번 학생은 합격입니다.
 5 번 학생은 합격입니다.
 ```
+
+</div>
+</details>
+<br>
+
 ___
 <br>
 
 ## 함수와 람다 표현식
-- global 키워드
+<details>
+<summary>global 키워드 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 a = 0
 
@@ -268,9 +328,15 @@ print(a)
 ```python
 10
 ```
+
+</div>
+</details>
 <br>
 
-- 여러개의 return 값
+<details>
+<summary>여러개의 return 값 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 def operator(a, b):
   add = a + b
@@ -285,19 +351,31 @@ print(a, b, c, d)
 ```python
 10 4 21 2.333333335
 ```
+
+</div>
+</details>
 <br>
 
-- 람다 표현식
-  - 함수가 매우 간단하거나, 한번 사용하고 말 경우에 이용
+<details>
+<summary>람다 표현식 (펼쳐보기)</summary>
+<div markdown="1">
+
+- 함수가 매우 간단하거나, 한번 사용하고 말 경우에 이용
 ```python
 print((lambda a, b: a + b)(3, 7))
 ```
 ```python
 10
 ```
+
+</div>
+</details>
 <br>
 
-- 람다 함수를 이용한 정렬
+<details>
+<summary>람다 함수를 이용한 정렬 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 array = [('홍길동', 50), ('이순신', 32), ('아무개', 74)]
 
@@ -311,9 +389,15 @@ print(sorted(array, key = lambda x: x[1]))
 [('이순신', 32), ('홍길동', 50), ('아무개', 74)]
 [('이순신', 32), ('홍길동', 50), ('아무개', 74)]
 ```
+
+</div>
+</details>
 <br>
 
-- 여러 개의 리스트에 적용되는 람다 표현식
+<details>
+<summary>여러 개의 리스트에 적용되는 람다 표현식 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 list1 = [1, 2, 3, 4, 5]
 list2 = [6, 7, 8, 9, 10]
@@ -324,6 +408,11 @@ print(list(result))
 ```python
 [7, 9, 11, 13, 15]
 ```
+
+</div>
+</details>
+<br>
+
 ___
 <br>
 
@@ -339,10 +428,12 @@ ___
 - collections : 덱(deque), 카운터 등의 유용한 자료구조를 포함
 - math : 필수적인 수학적 기능 제공
   - 팩토리얼, 제곱근, 최대공약수(GCD), 삼각함수 관련 함수부터 파이와 같은 상수를 포함
-
 <br>
 
-- 내장 함수
+<details>
+<summary>내장 함수 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 # sum()
 result = sum([1, 2, 3, 4, 5])
@@ -376,13 +467,19 @@ print(result)
 [9, 8, 5, 4, 1]
 [('이순신', 75), ('아무개', 50), ('홍길동', 35)]
 ```
+
+</div>
+</details>
 <br>
 
 - 순열과 조합
 <img width="700px" src="https://user-images.githubusercontent.com/60170616/126166426-46a855f5-b8b8-449f-8c2a-430aa13e6743.JPG">
 <br>
 
-- 순열
+<details>
+<summary>순열 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 from itertools import permutations
 
@@ -395,7 +492,14 @@ print(result)
 [('A', 'B', 'C'), ('A', 'C', 'B'), ('B', 'A', 'C'), ('B', 'C', 'A'), ('C', 'A', 'B'), ('C', 'B', 'A')]
 ```
 
-- 중복 순열
+</div>
+</details>
+<br>
+
+<details>
+<summary>중복 순열 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 from itertools import product
 
@@ -408,9 +512,15 @@ print(result)
 [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'B'), ('B', 'C'),
 ('C', 'A'), ('C', 'B'), ('C', 'C')]
 ```
+
+</div>
+</details>
 <br>
 
-- 조합
+<details>
+<summary>조합 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 from itertools import combinations
 
@@ -423,7 +533,14 @@ print(result)
 [('A', 'B'), ('A', 'C'), ('B', 'C')]
 ```
 
-- 중복 조합
+</div>
+</details>
+<br>
+
+<details>
+<summary>중복 조합 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 from itertools import combinations_with_replacement
 
@@ -435,9 +552,15 @@ print(result)
 ```python
 [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
 ```
+
+</div>
+</details>
 <br>
 
-- Counter
+<details>
+<summary>Counter (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 from collections import Counter
 
@@ -452,9 +575,15 @@ print(dict(counter))
 1
 {'red': 2, 'blue': 3, 'green': 1}
 ```
+
+</div>
+</details>
 <br>
 
-- 최대 공약수( gcd() 함수 )와 최소 공배수
+<details>
+<summary>최대 공약수(gcd() 함수)와 최소 공배수 (펼쳐보기)</summary>
+<div markdown="1">
+
 ```python
 import math
 
@@ -472,4 +601,9 @@ print(lcm(a, b)) # 최소 공배수 계산
 7
 42
 ```
+
+</div>
+</details>
+<br>
+
 ___
