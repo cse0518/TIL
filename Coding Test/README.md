@@ -1,6 +1,7 @@
 ___
 # 코딩테스트 준비
-- [참고영상](https://www.youtube.com/playlist?list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC) ( 동빈나_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
+- [참고영상_YouTube](https://www.youtube.com/playlist?list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC) ( 동빈나_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
+- [참고자료_GitHub](https://github.com/ndb796/python-for-coding-test) ( 전체 소스코드_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
 <br>
 
 ## 알고리즘 성능 고려
@@ -51,4 +52,5 @@ ___
   - 알고리즘 비교(선택, 삽입, 퀵, 계수)
   - 퀵 정렬(상세 과정 & 구현)
   - 계수 정렬(상세 과정 & 구현)
+- 이진 탐색
 ___
