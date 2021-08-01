@@ -1,5 +1,5 @@
 ___
-# Python 문법 관련 정리
+# Python 문법
 <br>
 
 ## INDEX
