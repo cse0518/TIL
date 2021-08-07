@@ -6,7 +6,9 @@ ___
 ##
 
 ## INDEX
-### [1. JAVA 기초 학습](JAVA%20기초%20학습.md)
+### [1. 프로그래머스 데브코스 JAVA 심화 학습](https://github.com/cse0518/TIL_Programmers-Dev-Course/tree/be/1/C-cse0518/Week%201)
+
+### [2. JAVA 기초 학습](JAVA%20기초%20학습.md)
   - 클래스, 객체, 인스턴스
     - 객체와 인스턴스의 차이?
   - 클래스 멤버, 인스턴스 멤버
