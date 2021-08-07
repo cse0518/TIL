@@ -1,17 +1,28 @@
 ___
 # Java 기초
 
-#### 참고 영상_[(생활코딩 Java)](https://www.youtube.com/playlist?list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck)
+### 참고 영상
+- [(생활코딩_Java 입문 수업 67~)](https://www.youtube.com/playlist?list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck)
+- [(생활코딩_JAVA method)](https://www.youtube.com/playlist?list=PLuHgQVnccGMDkdt3N9tT0aZPZx5-Ri2jo)
+- [(생활코딩_JAVA 객체지향 프로그래밍)](https://www.youtube.com/playlist?list=PLuHgQVnccGMAb-e41kXPSIpmoz1RvHyN4)
+- [(생활코딩_Java 상속)](https://www.youtube.com/playlist?list=PLuHgQVnccGMA1bRSk_SZrXMngx5iq03cc)
+- [(생활코딩_Java Interface)](https://www.youtube.com/playlist?list=PLuHgQVnccGMDiv-rCwlN-YjLKWR6-SBbM)
+
+### 나중에 추가로 들을 영상
+- [(생활코딩_Java 예외 처리)](https://www.youtube.com/playlist?list=PLuHgQVnccGMCrFJLxpjhE0N5tvOVxJuVB)
 <br/>
 
 ## INDEX
   - [클래스, 객체, 인스턴스](#클래스-객체-인스턴스)
     - [객체와 인스턴스의 차이?](#객체와-인스턴스의-차이)
   - [클래스 멤버, 인스턴스 멤버](#클래스-멤버-인스턴스-멤버)
-    - [의문점 (해결)](#의문점-해결)
+    - [의문점: 어떤 상황에 instance를 생성하는지?](#의문점-어떤-상황에-instance를-생성하는지)
   - [상속, 생성자](#상속-생성자)
   - [overriding, overloading](#overriding-overloading)
   - [접근제어자(Access Level Modifiers)](#접근제어자access-level-modifiers)
+  - [final, abstract](#final-abstract)
+  - [interface](#interface)
+    - [의문점: interface와 abstract class의 차이?](#의문점-interface와-abstract-class의-차이)
 ##
 
 ## 클래스, 객체, 인스턴스
@@ -114,7 +125,7 @@ public class ClassMemberDemo {
 </details>
 <br>
 
-### 의문점 (해결)
+### 의문점: 어떤 상황에 instance를 생성하는지?
 - 클래스 메소드로 호출하려면 static으로 선언 필요
 - 인스턴스를 생성해서 인스턴스 메소드를 호출하려면 static 선언하면 안됨
 - 그러면 하나로 통일하면 안되나?
@@ -137,11 +148,12 @@ public class ClassMemberDemo {
 - 다중 상속 X (하나의 부모 클래스만 상속 가능)
 - 자식 객체를 생성하면, 부모 객체를 먼저 생성한 후에 자식 객체가 생성된다.
 - 부모의 생성자가 선언되어 있는 경우, 자식 생성자에서 super()를 통하여 호출해줘야만 한다.
+- this는 인스턴스를 가리킨다.
 ##
 
 ## overriding, overloading
-- overriding: 부모의 메소드를 재정의, 덮어 쓰기(type, parameter는 맞춰줘야 함)
-- overloading: 같은 이름의 메소드에 다른 자료형 or parameter 개수
+- `overriding`: 부모의 메소드를 재정의, 덮어 쓰기(type, parameter는 맞춰줘야 함)
+- `overloading`: 같은 이름의 메소드에 다른 자료형 or parameter 개수
 ##
 
 ## 접근제어자(Access Level Modifiers)
@@ -153,5 +165,42 @@ public class ClassMemberDemo {
   |protected |같은 패키지 or 해당 클래스를 상속받은 외부 패키지 클래스에서 접근 가능|
   |default   |같은 패키지 내에서 접근 가능(기본)|
   |private   |해당 클래스에서만 접근 가능|
+##
 
+## final, abstract
+- `final`
+  - 변수 앞에 오게되면 상수로 인식
+  - 상수는 모두 대문자로 표시하는 것이 원칙 ex) MAX_VALUE
+  - method 앞에 오면 overriding 불가
+  - class 앞에 오면 상속 불가, 객체 생성은 가능
+- `abstract (추상 클래스)`
+  - 변수 앞에 올 수 없다.
+  - method 앞에 붙으면 선언만 해놓고 구현은 없는 것 (overriding 필수)
+  - abstract method가 하나라도 있으면 반드시 abstract class
+  - 객체로 생성 불가
+##
+
+## interface
+- 동일한 목적 하에 동일한 기능을 수행하게끔 강제하는 규격
+- 주로 첫 글자는 대문자
+- 명칭은 형용사로 많이 씀
+- implements 해서 사용
+- 객체로 생성 불가
+- interface가 interface를 상속 가능(extends)
+- JAVA8 이전에는 상수, abstract method만 선언이 가능했지만, JAVA8부터는 default, static method도 추가 ( 강제성 안에 유연성을 추가한 느낌)
+  - `상수`: 불변의 상수값 정의
+    - 제공해주는 상수 값만 참조해라 **(강제)**
+  - `abstract method`: method의 형식만 제시, overriding 필수
+    - 규격만 정해주고 overriding 해서 재구현해라 **(강제)**
+  - `default method`: method를 변경가능하게 일단 구현해놓음
+    - interface에서 기본적으로 제공, but 마음에 안들면 각자 추가적으로 구현해라 **(선택)**
+  - `static method`: method를 확실하게 구현해놓음(불변)
+    - 인터페이스에서 제공해주는 것만 무조건 사용 **(강제)**
+
+### 의문점: interface와 abstract class의 차이?
+- `interface`는 abstract class와 다르게 **다중 상속이 가능**
+  - **다형성 극대화**
+- `interface`는 특정한 method가 반드시 존재하도록 강제하는 목적
+  - 필요에 따라 결합하는 관계
+- `abstract class`는 상속을 받아서 기능을 확장시키는 목적
 ___
