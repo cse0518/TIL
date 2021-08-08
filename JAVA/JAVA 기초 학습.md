@@ -203,4 +203,19 @@ public class ClassMemberDemo {
 - `interface`는 특정한 method가 반드시 존재하도록 강제하는 목적
   - 필요에 따라 결합하는 관계
 - `abstract class`는 상속을 받아서 기능을 확장시키는 목적
+##
+
+## Object 클래스
+- 자세한 내용 -> [블로그]() 글 포스팅
+- java.lang 패키지는 자바에서 가장 기본적인 동작을 수행하는 클래스들의 집합이다.
+- java.lang 패키지에 속한 Object 클래스는 많이 사용된다. (11개의 method로 구성)
+  - toString()
+    - 해당 인스턴스에 대한 정보를 문자열로 반환
+    - 반환 값: `클래스 이름@해시 코드`
+  - equals()
+    - 객체를 비교할 때 씀
+    - primitive data type을 비교할때는 `==`을 씀
+  - clone()
+    - 객체를 복제
+    - 클래스에 Cloneable 인터페이스를 implements 해서 사용
 ___

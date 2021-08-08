@@ -7,5 +7,5 @@ ___
 - Boost Course : 부스트 코스 강의를 듣고 기억할 내용을 정리합니다.
 - Coding Test : 코딩테스트 강의를 듣고 기억할 내용을 정리합니다.
 - GitHub : Git과 Github 활용에 대해 알게된 내용을 정리합니다.
-- JAVA : Java Language에 대해 기억할 내용을 정리합니다.
+- JAVA : Java Language에 대해 알게된 내용을 정리합니다.
 ___

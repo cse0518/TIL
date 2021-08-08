@@ -17,6 +17,7 @@ ___
   - final, abstract
   - interface
     - 의문점: interface와 abstract class의 차이?
+  - Object 클래스
 
 ### [2. 프로그래머스 데브코스 JAVA 심화 학습](https://github.com/cse0518/TIL_Programmers-Dev-Course/tree/be/1/C-cse0518/Week%201)
 ___
