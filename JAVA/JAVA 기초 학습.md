@@ -2,14 +2,14 @@ ___
 # Java 기초
 
 ### 참고 영상
-- [(생활코딩_Java 입문 수업 67~)](https://www.youtube.com/playlist?list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck)
-- [(생활코딩_JAVA method)](https://www.youtube.com/playlist?list=PLuHgQVnccGMDkdt3N9tT0aZPZx5-Ri2jo)
-- [(생활코딩_JAVA 객체지향 프로그래밍)](https://www.youtube.com/playlist?list=PLuHgQVnccGMAb-e41kXPSIpmoz1RvHyN4)
-- [(생활코딩_Java 상속)](https://www.youtube.com/playlist?list=PLuHgQVnccGMA1bRSk_SZrXMngx5iq03cc)
-- [(생활코딩_Java Interface)](https://www.youtube.com/playlist?list=PLuHgQVnccGMDiv-rCwlN-YjLKWR6-SBbM)
+- [생활코딩_Java 입문 수업 (67~)](https://www.youtube.com/playlist?list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck)
+- [생활코딩_JAVA method](https://www.youtube.com/playlist?list=PLuHgQVnccGMDkdt3N9tT0aZPZx5-Ri2jo)
+- [생활코딩_JAVA 객체지향 프로그래밍](https://www.youtube.com/playlist?list=PLuHgQVnccGMAb-e41kXPSIpmoz1RvHyN4)
+- [생활코딩_Java 상속](https://www.youtube.com/playlist?list=PLuHgQVnccGMA1bRSk_SZrXMngx5iq03cc)
+- [생활코딩_Java Interface](https://www.youtube.com/playlist?list=PLuHgQVnccGMDiv-rCwlN-YjLKWR6-SBbM)
 
 ### 나중에 추가로 들을 영상
-- [(생활코딩_Java 예외 처리)](https://www.youtube.com/playlist?list=PLuHgQVnccGMCrFJLxpjhE0N5tvOVxJuVB)
+- [생활코딩_Java 예외 처리](https://www.youtube.com/playlist?list=PLuHgQVnccGMCrFJLxpjhE0N5tvOVxJuVB)
 <br/>
 
 ## INDEX
