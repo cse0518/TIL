@@ -19,7 +19,7 @@ ___
 
 ## Collections
 - `Collections`는 `Collection`과 `Map`으로 이뤄짐
-- `Collections`의 구성
+- `Collections`의 구성  
   <img width="500px" src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/516/2160.png">
 ##
 
