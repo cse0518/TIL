@@ -4,9 +4,14 @@ ___
 - 김영한님의 인프런 강의를 듣고 실습 및 내용 정리를 진행했습니다.
 
 ## INDEX
-  - [Logging](#logging)
+  - Logging
     - Log4J
     - SLF4J
     - LogBack
-  - [Facade Pattern](#facade-pattern)
+  - Facade Pattern
+  - @ResponseBody
+  - 웹 어플리케이션 계층 구조
+  - JPA
+  - Spring Data JPA
+  - AOP
 ___
