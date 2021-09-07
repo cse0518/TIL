@@ -19,13 +19,15 @@ ___
   - 의문점: interface와 abstract class의 차이?
 - Object 클래스
 
-### [Collections](Collections.md)
-- Collections
-- ArrayList()
-- List와 Set의 차이점
-- HashSet()
-- iterator
-- Map
+### 학습 INDEX
+- [Collections](Collections.md)
+  - Collections
+  - ArrayList()
+  - List와 Set의 차이점
+  - HashSet()
+  - iterator
+  - Map
+- [Assert](Assert.md)
 
 ### [프로그래머스 데브코스 JAVA 심화 학습](https://github.com/cse0518/TIL_Programmers-Dev-Course/tree/be/1/C-cse0518/Week%201)
 ___
