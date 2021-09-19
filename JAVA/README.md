@@ -29,6 +29,7 @@ ___
   - Map
 - [Assert](Assert.md)
 - [Static](Static.md)
+- [Enum](Enum.md)
 
 ### [프로그래머스 데브코스 JAVA 심화 학습](https://github.com/cse0518/TIL_Programmers-Dev-Course/tree/be/1/C-cse0518/Week%201)
 ___
