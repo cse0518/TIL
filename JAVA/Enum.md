@@ -2,7 +2,8 @@ ___
 
 > ## ✨ Issue
 > - enum을 잘 활용한 다른분의 코드를 보고 감명 받아 자세히 찾아봤습니다.
-> - enum을 단순히 열겨형 클래스로만 사용하기보다, values()를 호출하여 그 값들에 stream()을 활용한다면 유용하게 쓰일 것 같습니다.
+> - enum을 단순히 열겨형 클래스로만 사용하기보다, values()를 호출하여 그 값들에 stream()을 활용한다면 유용하게 쓰일 것 같다.
+> - 마지막에 `Supplier`를 활용한 방법으로 `Factory 패턴`을 사용하는 걸 잘 활용해야겠다!!
 <br/>
 
 # Enum
@@ -121,6 +122,132 @@ public class SeasonCheck {
             // 가을
             // 겨울
         }
+    }
+}
+```
+- 두가지 상수 옵션
+```java
+public enum Season {
+    SPRING(1, "봄"),
+    SUMMER(2, "여름"),
+    AUTUMN(3, "가을"),
+    WINTER(4, "겨울");
+    
+    final private int index;
+    final private String name;
+
+    private Season(int index, Stirng name) {
+        this.index = index;
+        this.name = name;
+    }
+
+    public String getIndex() {
+        return index;
+    }
+    
+    public String getName() {
+        return name;
+    }
+}
+
+public class SeasonCheck {
+    public static void main(String[] args) {
+        for(Season season : Season.values()) {
+            System.out.println(
+                season.getIndex +
+                "번 " +
+                season.getName() +
+                "입니다."
+            );
+            // 1번 봄입니다.
+            // 2번 여름입니다.
+            // 3번 가을입니다.
+            // 4번 겨울입니다.
+        }
+    }
+}
+```
+- `Supplier`를 활용
+```java
+public enum Season {
+    SPRING(1, "봄",   () -> "따뜻함"),
+    SUMMER(2, "여름", () -> "더움"  ),
+    AUTUMN(3, "가을", () -> "시원함"),
+    WINTER(4, "겨울", () -> "추움"  );
+    
+    final private int index;
+    final private String name;
+    final private Supplier<String> weather;
+    
+    private Season(int index, Stirng name, Supplier<String> weather) {
+        this.index = index;
+        this.name = name;
+        this.weather = weather;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public String getWeather() {
+      return weather.get();
+    }
+}
+
+public class SeasonCheck {
+    public static void main(String[] args) {
+        for(Season season : Season.values()) {
+            System.out.println(
+                season.getIndex +
+                "번 " +
+                season.getName() +
+                "의 날씨는 : " +
+                season.getWeather
+            );
+            // 1번 봄의 날씨는 : 따뜻함
+            // 2번 여름의 날씨는 : 더움
+            // 3번 가을의 날씨는 : 시원함
+            // 4번 겨울의 날씨는 : 추움
+        }
+    }
+}
+```
+- `Enum`과 `Supplier`를 활용한 `Factory Pattern`
+```java
+public enum Season {
+    SPRING("봄", Warm::new), // 각각의 날씨 클래스가 있다고 가정
+    SUMMER("여름", Hot::new),
+    AUTUMN("가을", Cool::new),
+    WINTER("겨울", Cold::new);
+    
+    final private String name;
+    final private Supplier<Weather> supplier;
+    
+    private Season(Stirng name, Supplier<Weather> supplier) {
+        this.name = name;
+        this.weather = supplier;
+    }
+    
+    public Weather getWeather(String userInput) {
+      // userInput을 Season type으로 변환
+      Season parsingUserInput = Arrays.stream(Season.values()) // Season Enum 클래스의 값들 중에
+                .filter(season -> season.name.equals(userInput)) // user가 입력한 것이 존재하는지 필터링
+                .findFirst() // 필터링 된 것은 하나일 것이고 그 Season type을 return
+                .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 계절"));
+
+      // userInput에 해당하는 Weather 클래스를 return
+      return parsingUserInput.supplier.get();
+    }
+}
+
+public class SeasonExecute {
+    public static void main(String[] args) {
+        // input에 대한 Weather 클래스에 구현되어있는 execute 메소드 실행
+        season.getWeather(input).execute();
     }
 }
 ```
