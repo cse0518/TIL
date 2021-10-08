@@ -1,8 +1,5 @@
 ___
-# GitHub에 대해 알게된 내용을 정리합니다.
-- 최대한 간결하게 기록합니다.
-- 깊게 다루고 싶은 주제는 [GitHub.io](https://cse0518.github.io/) 에 정리합니다.
-<br/>
+# Git
 
 ## Commit Message
 
@@ -28,4 +25,11 @@ ___
   - "Fix", "Add", "Change"의 명령어로 시작합니다.
 - 한글 제목
   - "고침", "추가", "변경"의 명령어로 시작합니다.
+<br/>
+
+### git add 취소
+- git reset 파일명  -> 파일명 안적으면 전체 취소
+  ```bash
+  git reset
+  ```
 ___
