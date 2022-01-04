@@ -8,6 +8,7 @@
 - ⭐[nginx 설정](#nginx-설정)  
 - ⭐[Reverse Proxy](#reverse-proxy)  
 - ⭐[Load Balancer](#load-balancer)
+- [Health Check](#health-check)
 
 ---
 
@@ -185,7 +186,7 @@
         }
     }
 
-    # 전달된 요청:
+    # 전달된 요청: (치환)
     # http://192.168.1.1:8080/app/usr/index.html
     
     # ---
@@ -245,3 +246,20 @@ server {
     }
 }
 ```
+
+## Health Check
+
+- 서버에 주기적으로 HTTP 요청을 보내 서버의 상태를 확인한다.(ex. 특정 url 요청에 200 응답이 오는지 확인)
+- `Interval`
+  - health check를 통해 서버 상태를 확인하는 요청의 주기(default : 5초)
+- `Fails`
+  - 몇 번의 요청이 연속으로 실패하면 비정상적인 서버로 인지하는지 설정(default : 1회)
+- `Passes`
+  - 서버가 다시 복구되고, 몇 번의 요청이 연속으로 성공하면 정상적인 서버로 인지하는지 설정(default : 1회)
+- 설정 예시
+    ```bash
+    location / {
+        proxy_pass  http://test.com;
+        health_check  interval=10 fails=3 passes=3;
+    }
+    ```
