@@ -10,4 +10,9 @@
     - Logback 구조
     - Logback 주요 클래스
     - Log 패턴
+  - [Logback 기본제공 include](logging/logback%20기본제공%20include.md)
+    - base.xml
+    - defaults.xml
+    - console-appender.xml
+    - file-appender.xml
 ___
