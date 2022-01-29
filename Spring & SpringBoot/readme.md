@@ -15,4 +15,8 @@
     - defaults.xml
     - console-appender.xml
     - file-appender.xml
+  - [AsyncAppender](logging/AsyncAppender.md)
+    - 장단점 및 고려할 사항
+    - AsyncAppender 설정
+    - AsyncAppender 옵션
 ___
