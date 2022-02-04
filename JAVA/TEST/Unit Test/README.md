@@ -21,3 +21,20 @@
     - `@Spy`
     - `@InjectMocks`
   - Test 검증
+
+<br/>
+
+## 추가 참고 자료
+- [Mockito와 BDDMockito](Mockito와%20BDDMockito.md)
+  - Mockito와 BDDMockito 비교
+  - `Mockito` 메소드
+    - when().thenReturn()
+    - doReturn().when()
+    - verify()
+  - `BDDMockito` 메소드
+    - given().willReturn()
+    - then().should()
+    - verify()
+  - `Mockito`의 문제
+    - org.mockito.exceptions.misusing.PotentialStubbingProblem
+    - Strict Mode, Lenient Mode
