@@ -10,6 +10,13 @@
 <br/>
 
 ## 각 계층의 단위 테스트
+- [Entity Unit Test](Entity%20Unit%20Test.md)
+  - `@ParameterizedTest`
+    - @ValueSource
+    - @NullSource, @EmptySource, @NullAndEmptySource
+    - @CsvSource
+    - @EnumSource
+    - @MethodSource
 - [Repository Layer Unit Test](Repository%20Layer%20Unit%20Test.md)
   - `@DataJpaTest`
   - TestEntityManager

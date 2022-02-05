@@ -4,6 +4,8 @@
 ### INDEX
 - TEST
   - [Unit Test](https://github.com/cse0518/TIL/tree/main/JAVA/TEST/Unit%20Test)
+    - `Entity`
+      - @ParameterizedTest
     - `Repository`
       - @DataJpaTest
       - TestEntityManager
