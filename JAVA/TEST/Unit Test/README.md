@@ -50,3 +50,7 @@
   - `Mockito`의 문제
     - org.mockito.exceptions.misusing.PotentialStubbingProblem
     - Strict Mode, Lenient Mode
+- [RestDocs](RestDocs.md)
+  - 기본 환경 설정
+  - `@AutoConfigureRestDocs`
+  - 문서화

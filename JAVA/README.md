@@ -19,6 +19,7 @@
       - MockMvc, ObjectMapper
       - @MockBean
     - `BDDMockito`
+    - `RestDocs`
 - [JAVA 기초 학습](JAVA%20기초%20학습.md)
   - 클래스, 객체, 인스턴스
   - 클래스 멤버, 인스턴스 멤버
