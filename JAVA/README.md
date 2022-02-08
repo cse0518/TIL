@@ -7,17 +7,11 @@
     - `Entity`
       - @ParameterizedTest
     - `Repository`
-      - @DataJpaTest
-      - TestEntityManager
+      - @DataJpaTest, TestEntityManager
     - `Service`
-      - Mockito
-        - @Mock
-        - @InjectMocks
-      - BDDMockito
+      - Mockito, @Mock, @InjectMocks, BDDMockito
     - `Controller`
-      - @WebMvcTest
-      - MockMvc, ObjectMapper
-      - @MockBean
+      - @WebMvcTest, MockMvc, @MockBean
     - `BDDMockito`
     - `RestDocs`
 - [JAVA 기초 학습](JAVA%20기초%20학습.md)
