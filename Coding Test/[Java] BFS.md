@@ -70,3 +70,76 @@ public class Main {
     }
 }
 ```
+<br/>
+
+## Graph 클래스 커스텀 구현
+- Graph를 하나의 클래스로 구현하여 사용
+```java
+import java.util.*;
+
+class Main {
+    static int rows;
+    static Graph graph;
+    static Queue<Integer> queue = new LinkedList<>();
+
+    public static class Graph {
+        public int[][] graph;
+        public boolean[] visited;
+
+        public Graph(final int rows) {
+            graph = new int[rows][rows];
+            visited = new boolean[rows];
+        }
+
+        public void singleMapping(final int source, final int target) {
+            graph[source - 1][target - 1] = 1;
+        }
+
+        public void mapping(final int source, final int target) {
+            graph[source - 1][target - 1] = 1;
+            graph[target - 1][source - 1] = 1;
+        }
+
+        public void deleteMapping(final int source, final int target) {
+            graph[source - 1][target - 1] = 0;
+            graph[target - 1][source - 1] = 0;
+        }
+    }
+
+    public static void main(final String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+        rows = scanner.nextInt();
+        graph = new Graph(rows);
+
+        final int mappingCount = scanner.nextInt();
+        for (int i = 0; i < mappingCount; i++) {
+            final int source = scanner.nextInt();
+            final int target = scanner.nextInt();
+            graph.mapping(source, target);
+        }
+        scanner.close();
+
+        graph.visited[0] = true;
+        queue.add(0);
+
+        bfs();
+    }
+
+    public static void bfs() {
+        int count = 0;
+        while (!queue.isEmpty()) {
+            final Integer nodeNumber = queue.poll();
+            for (int i = 0; i < rows; i++) {
+                if (graph.visited[i]) continue;
+                if (graph.graph[nodeNumber][i] == 1) {
+                    graph.visited[i] = true;
+                    queue.add(i);
+                    count++;
+                }
+            }
+        }
+
+        System.out.println(count);
+    }
+}
+```
