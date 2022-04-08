@@ -1,7 +1,8 @@
 ___
 # 코딩테스트 준비
 - [참고영상_YouTube](https://www.youtube.com/playlist?list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC) ( 동빈나_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
-- [참고자료_GitHub](https://github.com/ndb796/python-for-coding-test) ( 전체 소스코드_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
+- [참고자료_GitHub](https://github.com/ndb796/python-for-coding-test) ( 소스코드_이것이 취업을 위한 코딩 테스트다 with 파이썬 )
+- [참고영상_YouTube](https://www.youtube.com/c/BaaarkingDog/videos) ( 바킹독의 실전 알고리즘 )
 <br>
 
 ## 알고리즘 성능 고려
@@ -20,7 +21,9 @@ ___
   |N의 범위가 100,000인 경우    | 시간 복잡도가 `O(NlogN)`인 알고리즘으로 설계 |
   |N의 범위가 10,000,000인 경우 | 시간 복잡도가 `O(N)`인 알고리즘으로 설계     |
 ___
-## 정리 문서 INDEX
+<br/>
+
+## INDEX
 
 ### 1. [Python 문법](Python%20문법.md)
 - List 관련 메소드
@@ -35,11 +38,9 @@ ___
   - 순열과 조합
   - Counter
   - 최대공약수 & 최소공배수
-##
 ### 2. [자료구조](자료구조.md)
 - 스택 구현 (Python & Java)
 - 큐 구현 (Python & Java)
-##
 ### 3. [알고리즘](알고리즘.md)
 - 그리디 알고리즘
 - 재귀 함수
@@ -57,4 +58,7 @@ ___
   - 다익스트라 최단 경로 알고리즘
   - 플로이드 워셜 알고리즘
 - 소수(Prime Number)
+### 4. [[Java] BFS]([Java]%20BFS.md)
+- BFS - 배열
+- Graph 클래스 커스텀 구현
 ___
