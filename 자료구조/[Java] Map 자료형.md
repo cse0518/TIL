@@ -1,6 +1,6 @@
 # Map
 
-### Map 자료형 입력 데이터 순서 보장
+### Map 자료형 입력 데이터 순서 보장 여부
 
 - `HashMap<>` : 입력 순서 보장 X
 - `LinkedHashMap<>` : 입력 순서 보장 O
@@ -53,7 +53,7 @@ map.values().toArray(Integer[]::new);
 ```
 <br/>
 
-### Map 정렬 후 반환
+### Map 정렬 후 변환
 
 ```java
 Map<String, Integer> map = new HashMap<>();
